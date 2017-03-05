@@ -17,29 +17,6 @@ public class Person {
         String ipAddress;
 
 
-    public String getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public String getIpAddress() {
-        return ipAddress;
-    }
 
     public Person(String id, String firstName, String lastName, String email, String country, String ipAddress){
             this.id = id;
@@ -48,22 +25,10 @@ public class Person {
             this.email = email;
             this.country = country;
             this.ipAddress = ipAddress;
-
-
-
-
-
-
         }
 
-
-
+    @Override
+    public String toString() {
+        return String.format("%s %s is from %s", firstName,lastName,country);
     }
-
-
-
-
-
-
-
-
+}
